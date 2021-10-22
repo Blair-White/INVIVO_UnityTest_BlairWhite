@@ -36,6 +36,16 @@ public class EnterFadePanel : MonoBehaviour
                     finished = true;
                 }
             }
+
+            if (exitingScene)
+            {
+                myImage.color = new Color(myImage.color.r, myImage.color.g, myImage.color.b, myImage.color.a + fadeRate);
+                if (myImage.color.a >= 1)
+                {
+                    finished = true;
+                }
+            }
+
         }
     }
 
