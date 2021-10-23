@@ -97,7 +97,7 @@ public class GameSceneController : MonoBehaviour
         IntroContainer.SetActive(false);
         Elevator.SetActive(true);
         ElevatorUI.SetActive(false);
-        LocationText.GetComponent<TextMeshProUGUI>().text = "Artifact Research";
+        LocationText.GetComponent<TextMeshProUGUI>().text = "Energy Research";
         MainCam.GetComponent<Animator>().enabled = false;
         Vector3 pos = new Vector3(CameraPos1.transform.position.x, CameraPos1.transform.position.y, CameraPos1.transform.position.z);
         MainCam.transform.position = pos;
