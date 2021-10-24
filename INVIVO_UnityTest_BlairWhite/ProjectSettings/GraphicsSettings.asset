@@ -39,6 +39,25 @@ GraphicsSettings:
   - {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 16001, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 17000, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 4800000, guid: c1e1d3119c6fd4646aea0b4b74cacc1a, type: 3}
+  - {fileID: 4800000, guid: cdbdb71de5f9c454b980f6d0e87f0afb, type: 3}
+  - {fileID: 4800000, guid: 4bf4cff0d0bac3d43894e2e8839feb40, type: 3}
+  - {fileID: 4800000, guid: e8ce9961912f3214586fe8709b9012c1, type: 3}
+  - {fileID: 4800000, guid: 02d2da9bc88d25c4d878c1ed4e0b3854, type: 3}
+  - {fileID: 4800000, guid: 4117fce9491711c4094d33a048e36e73, type: 3}
+  - {fileID: 4800000, guid: 0ef78d24e85a44f4da9d5b5eaa00e50b, type: 3}
+  - {fileID: 4800000, guid: 5ab0816423f0dfe45841cab3b05ec9ef, type: 3}
+  - {fileID: 4800000, guid: f75014305794b3948a3c6d5ccd550e05, type: 3}
+  - {fileID: 4800000, guid: 0d8afcb51cc9f0349a6d190da929b838, type: 3}
+  - {fileID: 4800000, guid: 7ad194cbe7d006f4bace915156972026, type: 3}
+  - {fileID: 4800000, guid: 2c459b89a7c8b1a4fbefe0d81341651c, type: 3}
+  - {fileID: 4800000, guid: 67f9497810829eb4791ec19e95781e51, type: 3}
+  - {fileID: 4800000, guid: d7640629310e79646af0f46eb55ae466, type: 3}
+  - {fileID: 4800000, guid: f997a3dc9254c44459323cced085150c, type: 3}
+  - {fileID: 4800000, guid: 81af42a93ade3dd46a9b583d4eec76d6, type: 3}
+  - {fileID: 4800000, guid: 51bcf79c50dc92e47ba87821b61100c3, type: 3}
+  - {fileID: 4800000, guid: 34a819c9e33402547a81619693adc8d5, type: 3}
+  - {fileID: 4800000, guid: 382151503e2a43a4ebb7366d1632731d, type: 3}
   m_PreloadedShaders: []
   m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_CustomRenderPipeline: {fileID: 0}
@@ -46,7 +65,58 @@ GraphicsSettings:
   m_TransparencySortAxis: {x: 0, y: 0, z: 1}
   m_DefaultRenderingPath: 1
   m_DefaultMobileRenderingPath: 1
-  m_TierSettings: []
+  m_TierSettings:
+  - serializedVersion: 5
+    m_BuildTarget: 14
+    m_Tier: 0
+    m_Settings:
+      standardShaderQuality: 0
+      renderingPath: 1
+      hdrMode: 2
+      realtimeGICPUUsage: 25
+      useReflectionProbeBoxProjection: 0
+      useReflectionProbeBlending: 0
+      useHDR: 0
+      useDetailNormalMap: 0
+      useCascadedShadowMaps: 0
+      prefer32BitShadowMaps: 0
+      enableLPPV: 0
+      useDitherMaskForAlphaBlendedShadows: 0
+    m_Automatic: 1
+  - serializedVersion: 5
+    m_BuildTarget: 14
+    m_Tier: 1
+    m_Settings:
+      standardShaderQuality: 2
+      renderingPath: 1
+      hdrMode: 1
+      realtimeGICPUUsage: 25
+      useReflectionProbeBoxProjection: 1
+      useReflectionProbeBlending: 1
+      useHDR: 1
+      useDetailNormalMap: 1
+      useCascadedShadowMaps: 1
+      prefer32BitShadowMaps: 0
+      enableLPPV: 1
+      useDitherMaskForAlphaBlendedShadows: 1
+    m_Automatic: 1
+  - serializedVersion: 5
+    m_BuildTarget: 14
+    m_Tier: 2
+    m_Settings:
+      standardShaderQuality: 2
+      renderingPath: 1
+      hdrMode: 1
+      realtimeGICPUUsage: 25
+      useReflectionProbeBoxProjection: 1
+      useReflectionProbeBlending: 1
+      useHDR: 1
+      useDetailNormalMap: 1
+      useCascadedShadowMaps: 1
+      prefer32BitShadowMaps: 0
+      enableLPPV: 1
+      useDitherMaskForAlphaBlendedShadows: 1
+    m_Automatic: 1
   m_LightmapStripping: 0
   m_FogStripping: 0
   m_InstancingStripping: 0
