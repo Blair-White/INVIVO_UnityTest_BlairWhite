@@ -58,6 +58,7 @@
 		<type fullname="DisableChildren" preserve="nothing"/>
 		<type fullname="DoorScript" preserve="nothing"/>
 		<type fullname="EnterFadePanel" preserve="nothing"/>
+		<type fullname="FollowMouse" preserve="nothing"/>
 		<type fullname="GameController" preserve="nothing"/>
 		<type fullname="GameSceneController" preserve="nothing"/>
 		<type fullname="LogoController" preserve="nothing"/>

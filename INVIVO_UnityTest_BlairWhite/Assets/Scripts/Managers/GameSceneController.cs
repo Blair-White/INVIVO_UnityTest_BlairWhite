@@ -102,6 +102,7 @@ public class GameSceneController : MonoBehaviour
         Vector3 pos = new Vector3(CameraPos1.transform.position.x, CameraPos1.transform.position.y, CameraPos1.transform.position.z);
         MainCam.transform.position = pos;
         SetDoorAnimationsForward();
+        ElevatorButton.SetActive(true);
     }
 
     public void SetToFloor3()
@@ -116,6 +117,7 @@ public class GameSceneController : MonoBehaviour
         MainCam.GetComponent<Animator>().enabled = false;
         Vector3 pos = new Vector3(CameraPos1.transform.position.x, CameraPos1.transform.position.y, CameraPos1.transform.position.z);
         MainCam.transform.position = pos;
+        ElevatorButton.SetActive(true);
         SetDoorAnimationsForward();
     }
 

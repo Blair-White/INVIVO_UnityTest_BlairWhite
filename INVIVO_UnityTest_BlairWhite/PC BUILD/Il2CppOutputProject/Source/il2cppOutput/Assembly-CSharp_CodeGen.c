@@ -122,7 +122,13 @@ extern void ActivateObject_Update_mC4FBD400E0047F40F715CD4E029F29FE171C4424 (voi
 extern void ActivateObject_OnMouseUp_mBC55826F1E19F78B585BBFE0D769DC29996E67B5 (void);
 // 0x00000037 System.Void ActivateObject::.ctor()
 extern void ActivateObject__ctor_m17E6E3AFA30335392F5F9C712FB62528EC3FDCBE (void);
-static Il2CppMethodPointer s_methodPointers[55] = 
+// 0x00000038 System.Void FollowMouse::Start()
+extern void FollowMouse_Start_m6B6068CBE18D660E5F07D48C75A459A21EA65023 (void);
+// 0x00000039 System.Void FollowMouse::Update()
+extern void FollowMouse_Update_mE46B5DF0B0A1AD16E45E1D58D76D86A6181E2833 (void);
+// 0x0000003A System.Void FollowMouse::.ctor()
+extern void FollowMouse__ctor_mE7167A6DD9E38C6C8368F278ED3C900CDB20178A (void);
+static Il2CppMethodPointer s_methodPointers[58] = 
 {
 	EnterFadePanel_Awake_mECB2DA7A0A9922BBE9948FE713F6EEBB87677474,
 	EnterFadePanel_Start_m4695940353107737D703BE52BF30D962DE212F60,
@@ -179,8 +185,11 @@ static Il2CppMethodPointer s_methodPointers[55] =
 	ActivateObject_Update_mC4FBD400E0047F40F715CD4E029F29FE171C4424,
 	ActivateObject_OnMouseUp_mBC55826F1E19F78B585BBFE0D769DC29996E67B5,
 	ActivateObject__ctor_m17E6E3AFA30335392F5F9C712FB62528EC3FDCBE,
+	FollowMouse_Start_m6B6068CBE18D660E5F07D48C75A459A21EA65023,
+	FollowMouse_Update_mE46B5DF0B0A1AD16E45E1D58D76D86A6181E2833,
+	FollowMouse__ctor_mE7167A6DD9E38C6C8368F278ED3C900CDB20178A,
 };
-static const int32_t s_InvokerIndices[55] = 
+static const int32_t s_InvokerIndices[58] = 
 {
 	1817,
 	1817,
@@ -237,13 +246,16 @@ static const int32_t s_InvokerIndices[55] =
 	1817,
 	1817,
 	1817,
+	1817,
+	1817,
+	1817,
 };
 extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	55,
+	58,
 	s_methodPointers,
 	0,
 	NULL,
