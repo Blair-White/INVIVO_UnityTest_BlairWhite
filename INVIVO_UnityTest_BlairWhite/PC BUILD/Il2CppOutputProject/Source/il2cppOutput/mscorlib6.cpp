@@ -1821,6 +1821,8 @@ struct ReadOnlyCollection_1_t921D1901AD35062BE31FAEB0798A4B814F33A3C3  : public 
 public:
 	// System.Collections.Generic.IList`1<T> System.Collections.ObjectModel.ReadOnlyCollection`1::list
 	RuntimeObject* ___list_0;
+	// System.Object System.Collections.ObjectModel.ReadOnlyCollection`1::_syncRoot
+	RuntimeObject * ____syncRoot_1;
 
 public:
 	inline static int32_t get_offset_of_list_0() { return static_cast<int32_t>(offsetof(ReadOnlyCollection_1_t921D1901AD35062BE31FAEB0798A4B814F33A3C3, ___list_0)); }
@@ -1831,6 +1833,15 @@ public:
 		___list_0 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___list_0), (void*)value);
 	}
+
+	inline static int32_t get_offset_of__syncRoot_1() { return static_cast<int32_t>(offsetof(ReadOnlyCollection_1_t921D1901AD35062BE31FAEB0798A4B814F33A3C3, ____syncRoot_1)); }
+	inline RuntimeObject * get__syncRoot_1() const { return ____syncRoot_1; }
+	inline RuntimeObject ** get_address_of__syncRoot_1() { return &____syncRoot_1; }
+	inline void set__syncRoot_1(RuntimeObject * value)
+	{
+		____syncRoot_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____syncRoot_1), (void*)value);
+	}
 };
 
 
@@ -1840,6 +1851,8 @@ struct ReadOnlyCollection_1_t4348A40742B97AA544A2F3845FA1C60512811C28  : public 
 public:
 	// System.Collections.Generic.IList`1<T> System.Collections.ObjectModel.ReadOnlyCollection`1::list
 	RuntimeObject* ___list_0;
+	// System.Object System.Collections.ObjectModel.ReadOnlyCollection`1::_syncRoot
+	RuntimeObject * ____syncRoot_1;
 
 public:
 	inline static int32_t get_offset_of_list_0() { return static_cast<int32_t>(offsetof(ReadOnlyCollection_1_t4348A40742B97AA544A2F3845FA1C60512811C28, ___list_0)); }
@@ -1849,6 +1862,15 @@ public:
 	{
 		___list_0 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___list_0), (void*)value);
+	}
+
+	inline static int32_t get_offset_of__syncRoot_1() { return static_cast<int32_t>(offsetof(ReadOnlyCollection_1_t4348A40742B97AA544A2F3845FA1C60512811C28, ____syncRoot_1)); }
+	inline RuntimeObject * get__syncRoot_1() const { return ____syncRoot_1; }
+	inline RuntimeObject ** get_address_of__syncRoot_1() { return &____syncRoot_1; }
+	inline void set__syncRoot_1(RuntimeObject * value)
+	{
+		____syncRoot_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____syncRoot_1), (void*)value);
 	}
 };
 
@@ -26637,7 +26659,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MemberInfoU5BU5D_t04CE6CC3692D77C74DC079E7CAF
 		RuntimeType_t4F49C0B3B2871AECF65AF5FA3E42BAB5B0C1FD07 * L_0 = ___type0;
 		NullCheck(L_0);
 		FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E* L_1;
-		L_1 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(43 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_0, ((int32_t)52));
+		L_1 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(44 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_0, ((int32_t)52));
 		V_0 = L_1;
 		V_1 = 0;
 		V_2 = 0;
@@ -26762,7 +26784,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FormatterServices_CheckSerializable_m6DB
 		RuntimeType_t4F49C0B3B2871AECF65AF5FA3E42BAB5B0C1FD07 * L_0 = ___type0;
 		NullCheck(L_0);
 		bool L_1;
-		L_1 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsSerializable() */, L_0);
+		L_1 = VirtFuncInvoker0< bool >::Invoke(72 /* System.Boolean System.Type::get_IsSerializable() */, L_0);
 		if (!L_1)
 		{
 			goto IL_000a;
@@ -26981,7 +27003,7 @@ IL_00ea:
 		RuntimeType_t4F49C0B3B2871AECF65AF5FA3E42BAB5B0C1FD07 * L_47 = V_2;
 		NullCheck(L_47);
 		FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E* L_48;
-		L_48 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(43 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_47, ((int32_t)36));
+		L_48 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(44 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_47, ((int32_t)36));
 		bool L_49 = V_5;
 		G_B11_0 = L_48;
 		if (L_49)
@@ -28209,7 +28231,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FormatterServices_GetClrTypeFullNam
 		Type_t * L_4 = ___type0;
 		NullCheck(L_4);
 		Type_t * L_5;
-		L_5 = VirtFuncInvoker0< Type_t * >::Invoke(97 /* System.Type System.Type::GetElementType() */, L_4);
+		L_5 = VirtFuncInvoker0< Type_t * >::Invoke(98 /* System.Type System.Type::GetElementType() */, L_4);
 		IL2CPP_RUNTIME_CLASS_INIT(FormatterServices_t346CDF3874B4B34E7FFFCA2288D9AB1492F6A21C_il2cpp_TypeInfo_var);
 		String_t* L_6;
 		L_6 = FormatterServices_GetClrTypeFullName_m432DC89B25FD01CE6DD2666E24BC6313441135A4(L_5, /*hidden argument*/NULL);
@@ -28223,7 +28245,7 @@ IL_002b:
 		Type_t * L_8 = ___type0;
 		NullCheck(L_8);
 		Type_t * L_9;
-		L_9 = VirtFuncInvoker0< Type_t * >::Invoke(97 /* System.Type System.Type::GetElementType() */, L_8);
+		L_9 = VirtFuncInvoker0< Type_t * >::Invoke(98 /* System.Type System.Type::GetElementType() */, L_8);
 		IL2CPP_RUNTIME_CLASS_INIT(FormatterServices_t346CDF3874B4B34E7FFFCA2288D9AB1492F6A21C_il2cpp_TypeInfo_var);
 		String_t* L_10;
 		L_10 = FormatterServices_GetClrTypeFullName_m432DC89B25FD01CE6DD2666E24BC6313441135A4(L_9, /*hidden argument*/NULL);
@@ -28291,7 +28313,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FormatterServices_GetClrTypeFullNam
 		Type_t * L_0 = ___type0;
 		NullCheck(L_0);
 		bool L_1;
-		L_1 = VirtFuncInvoker0< bool >::Invoke(74 /* System.Boolean System.Type::get_IsGenericType() */, L_0);
+		L_1 = VirtFuncInvoker0< bool >::Invoke(75 /* System.Boolean System.Type::get_IsGenericType() */, L_0);
 		if (L_1)
 		{
 			goto IL_000f;
@@ -28310,11 +28332,11 @@ IL_000f:
 		Type_t * L_4 = ___type0;
 		NullCheck(L_4);
 		TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_5;
-		L_5 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(98 /* System.Type[] System.Type::GetGenericArguments() */, L_4);
+		L_5 = VirtFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(99 /* System.Type[] System.Type::GetGenericArguments() */, L_4);
 		Type_t * L_6 = ___type0;
 		NullCheck(L_6);
 		Type_t * L_7;
-		L_7 = VirtFuncInvoker0< Type_t * >::Invoke(99 /* System.Type System.Type::GetGenericTypeDefinition() */, L_6);
+		L_7 = VirtFuncInvoker0< Type_t * >::Invoke(100 /* System.Type System.Type::GetGenericTypeDefinition() */, L_6);
 		NullCheck(L_7);
 		String_t* L_8;
 		L_8 = VirtFuncInvoker0< String_t* >::Invoke(25 /* System.String System.Type::get_FullName() */, L_7);

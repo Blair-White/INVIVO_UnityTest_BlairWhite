@@ -24173,7 +24173,7 @@ IL_00a9:
 		Type_t * L_28 = __this->get_objectType_2();
 		NullCheck(L_28);
 		bool L_29;
-		L_29 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsSerializable() */, L_28);
+		L_29 = VirtFuncInvoker0< bool >::Invoke(72 /* System.Boolean System.Type::get_IsSerializable() */, L_28);
 		if (L_29)
 		{
 			goto IL_00f8;
@@ -24353,7 +24353,7 @@ IL_006d:
 		Type_t * L_20 = ___objectType0;
 		NullCheck(L_19);
 		bool L_21;
-		L_21 = VirtFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_19, L_20);
+		L_21 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_19, L_20);
 		if (!L_21)
 		{
 			goto IL_00bd;
@@ -35657,7 +35657,7 @@ IL_002d:
 		L_7 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_6, /*hidden argument*/NULL);
 		NullCheck(L_7);
 		Type_t * L_8;
-		L_8 = VirtFuncInvoker0< Type_t * >::Invoke(97 /* System.Type System.Type::GetElementType() */, L_7);
+		L_8 = VirtFuncInvoker0< Type_t * >::Invoke(98 /* System.Type System.Type::GetElementType() */, L_7);
 		NullCheck(L_8);
 		bool L_9;
 		L_9 = Type_get_IsPointer_mAD86040E1709C9A16431CB66C3D247A3DB9EBCEE(L_8, /*hidden argument*/NULL);

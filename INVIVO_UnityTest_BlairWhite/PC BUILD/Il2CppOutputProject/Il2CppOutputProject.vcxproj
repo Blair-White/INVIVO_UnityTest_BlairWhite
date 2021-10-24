@@ -114,6 +114,8 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System_CodeGen.c">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.Postprocessing.Runtime_CodeGen.c">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Unity.TextMeshPro_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\UnityEngine.AIModule_CodeGen.c">
@@ -192,6 +194,8 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\GenericMethods4.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\GenericMethods5.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics1.cpp">
@@ -201,6 +205,10 @@
     <ClCompile Include="Source\il2cppOutput\Generics11.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics12.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics13.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Generics14.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Generics2.cpp">
     </ClCompile>
@@ -314,6 +322,16 @@
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions30.cpp">
     </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions31.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions32.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions33.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions34.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions35.cpp">
+    </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions4.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Il2CppGenericComDefinitions5.cpp">
@@ -397,6 +415,14 @@
     <ClCompile Include="Source\il2cppOutput\System2.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\System_Attr.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.Postprocessing.Runtime.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.Postprocessing.Runtime1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.Postprocessing.Runtime2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\il2cppOutput\Unity.Postprocessing.Runtime_Attr.cpp">
     </ClCompile>
     <ClCompile Include="Source\il2cppOutput\Unity.TextMeshPro.cpp">
     </ClCompile>

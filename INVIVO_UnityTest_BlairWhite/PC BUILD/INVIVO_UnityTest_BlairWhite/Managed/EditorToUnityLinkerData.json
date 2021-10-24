@@ -633,6 +633,15 @@
             ]
         },
         {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "ComputeShader",
+            "fullManagedTypeName": "UnityEngine.ComputeShader",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/Scene 1.unity"
+            ]
+        },
+        {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "ActivateObject",
@@ -664,6 +673,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "DoorScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ElevShutoff",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -706,6 +722,111 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "MainMenuController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.AmbientOcclusion",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.AutoExposure",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.Bloom",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.ChromaticAberration",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.ColorGrading",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.DepthOfField",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.Grain",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.LensDistortion",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.MotionBlur",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.PostProcessLayer",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.PostProcessProfile",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.PostProcessResources",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.PostProcessVolume",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Postprocessing.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Rendering.PostProcessing.Vignette",
             "moduleName": "",
             "usedInScenes": []
         },

@@ -17457,7 +17457,7 @@ IL_002c:
 		Type_t * L_11 = V_0;
 		NullCheck(L_10);
 		bool L_12;
-		L_12 = VirtFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_10, L_11);
+		L_12 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_10, L_11);
 		if (L_12)
 		{
 			goto IL_0046;
@@ -17528,7 +17528,7 @@ IL_000f:
 		Type_t * L_6 = V_0;
 		NullCheck(L_5);
 		bool L_7;
-		L_7 = VirtFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_5, L_6);
+		L_7 = VirtFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_5, L_6);
 		if (L_7)
 		{
 			goto IL_001f;
@@ -31840,7 +31840,7 @@ IL_004b:
 			Type_t * L_18 = ___type0;
 			NullCheck(L_18);
 			FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E* L_19;
-			L_19 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(43 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_18, ((int32_t)52));
+			L_19 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(44 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_18, ((int32_t)52));
 			V_5 = L_19;
 			V_6 = 0;
 			goto IL_00f3;

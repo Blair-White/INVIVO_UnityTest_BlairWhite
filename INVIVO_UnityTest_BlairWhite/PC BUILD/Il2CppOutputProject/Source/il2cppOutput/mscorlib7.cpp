@@ -36922,7 +36922,7 @@ IL_0018:
 		L_4 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_3, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		bool L_5;
-		L_5 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsSerializable() */, L_4);
+		L_5 = VirtFuncInvoker0< bool >::Invoke(72 /* System.Boolean System.Type::get_IsSerializable() */, L_4);
 		if (L_5)
 		{
 			goto IL_003a;
@@ -36951,7 +36951,7 @@ IL_003a:
 		L_10 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_9, /*hidden argument*/NULL);
 		NullCheck(L_10);
 		bool L_11;
-		L_11 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsSerializable() */, L_10);
+		L_11 = VirtFuncInvoker0< bool >::Invoke(72 /* System.Boolean System.Type::get_IsSerializable() */, L_10);
 		if (L_11)
 		{
 			goto IL_005f;
@@ -45263,7 +45263,7 @@ IL_00f3:
 		Type_t * L_36 = ___type0;
 		NullCheck(L_36);
 		Type_t * L_37;
-		L_37 = VirtFuncInvoker0< Type_t * >::Invoke(97 /* System.Type System.Type::GetElementType() */, L_36);
+		L_37 = VirtFuncInvoker0< Type_t * >::Invoke(98 /* System.Type System.Type::GetElementType() */, L_36);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_38 = { reinterpret_cast<intptr_t> (Byte_t0111FAB8B8685667EDDAF77683F0D8F86B659056_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_39;
@@ -45905,7 +45905,7 @@ IL_0137:
 			Type_t * L_50 = V_5;
 			NullCheck(L_50);
 			FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E* L_51;
-			L_51 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(43 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_50, ((int32_t)26));
+			L_51 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(44 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_50, ((int32_t)26));
 			V_8 = L_51;
 			V_9 = 0;
 			goto IL_0259;
@@ -47501,7 +47501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ManifestBuilder_GetTypeName_m61A08B
 		Type_t * L_2 = ___type0;
 		NullCheck(L_2);
 		FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E* L_3;
-		L_3 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(43 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_2, ((int32_t)52));
+		L_3 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(44 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_2, ((int32_t)52));
 		V_0 = L_3;
 		FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E* L_4 = V_0;
 		NullCheck(L_4);
@@ -47725,7 +47725,7 @@ IL_010e:
 		Type_t * L_25 = ___type0;
 		NullCheck(L_25);
 		Type_t * L_26;
-		L_26 = VirtFuncInvoker0< Type_t * >::Invoke(97 /* System.Type System.Type::GetElementType() */, L_25);
+		L_26 = VirtFuncInvoker0< Type_t * >::Invoke(98 /* System.Type System.Type::GetElementType() */, L_25);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_27 = { reinterpret_cast<intptr_t> (Byte_t0111FAB8B8685667EDDAF77683F0D8F86B659056_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_28;

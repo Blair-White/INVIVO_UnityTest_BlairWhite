@@ -1006,6 +1006,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Enum_CompareTo_m71728D1C7189108C4C08A5157B2
 IL2CPP_EXTERN_C const RuntimeMethod* Enum_GetName_mA141F96AFDC64AD7020374311750DBA47BFCA8FA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enum_GetTypeCode_m054CDC8A47EED05B34EDCCD3B35EADFAD70CD8DE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enum_GetUnderlyingType_m8BD5EDDA4C9A15C2988B27DD48314AC3C16F7A53_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enum_GetValues_m8EEC6B32F297FDB2F7375DC8B197E0E1AB8643BD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enum_InternalFormattedHexString_m63F04543FC7B4BF93900852CD830063C0C9B6C4A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enum_IsDefined_m70E955627155998B426145940DE105ECEF213B96_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enum_Parse_m42052064519239A11D605CD696EC0FD90A0FB039_RuntimeMethod_var;
@@ -2003,6 +2004,8 @@ struct ReadOnlyCollection_1_t921D1901AD35062BE31FAEB0798A4B814F33A3C3  : public 
 public:
 	// System.Collections.Generic.IList`1<T> System.Collections.ObjectModel.ReadOnlyCollection`1::list
 	RuntimeObject* ___list_0;
+	// System.Object System.Collections.ObjectModel.ReadOnlyCollection`1::_syncRoot
+	RuntimeObject * ____syncRoot_1;
 
 public:
 	inline static int32_t get_offset_of_list_0() { return static_cast<int32_t>(offsetof(ReadOnlyCollection_1_t921D1901AD35062BE31FAEB0798A4B814F33A3C3, ___list_0)); }
@@ -2013,6 +2016,15 @@ public:
 		___list_0 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___list_0), (void*)value);
 	}
+
+	inline static int32_t get_offset_of__syncRoot_1() { return static_cast<int32_t>(offsetof(ReadOnlyCollection_1_t921D1901AD35062BE31FAEB0798A4B814F33A3C3, ____syncRoot_1)); }
+	inline RuntimeObject * get__syncRoot_1() const { return ____syncRoot_1; }
+	inline RuntimeObject ** get_address_of__syncRoot_1() { return &____syncRoot_1; }
+	inline void set__syncRoot_1(RuntimeObject * value)
+	{
+		____syncRoot_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____syncRoot_1), (void*)value);
+	}
 };
 
 
@@ -2022,6 +2034,8 @@ struct ReadOnlyCollection_1_t4348A40742B97AA544A2F3845FA1C60512811C28  : public 
 public:
 	// System.Collections.Generic.IList`1<T> System.Collections.ObjectModel.ReadOnlyCollection`1::list
 	RuntimeObject* ___list_0;
+	// System.Object System.Collections.ObjectModel.ReadOnlyCollection`1::_syncRoot
+	RuntimeObject * ____syncRoot_1;
 
 public:
 	inline static int32_t get_offset_of_list_0() { return static_cast<int32_t>(offsetof(ReadOnlyCollection_1_t4348A40742B97AA544A2F3845FA1C60512811C28, ___list_0)); }
@@ -2031,6 +2045,15 @@ public:
 	{
 		___list_0 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___list_0), (void*)value);
+	}
+
+	inline static int32_t get_offset_of__syncRoot_1() { return static_cast<int32_t>(offsetof(ReadOnlyCollection_1_t4348A40742B97AA544A2F3845FA1C60512811C28, ____syncRoot_1)); }
+	inline RuntimeObject * get__syncRoot_1() const { return ____syncRoot_1; }
+	inline RuntimeObject ** get_address_of__syncRoot_1() { return &____syncRoot_1; }
+	inline void set__syncRoot_1(RuntimeObject * value)
+	{
+		____syncRoot_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____syncRoot_1), (void*)value);
 	}
 };
 
@@ -16966,7 +16989,7 @@ IL_0039:
 		Type_t * L_8 = ___enumType0;
 		NullCheck(L_8);
 		bool L_9;
-		L_9 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_8);
+		L_9 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_8);
 		if (L_9)
 		{
 			goto IL_0056;
@@ -17379,7 +17402,41 @@ IL_0014:
 		Type_t * L_3 = ___enumType0;
 		NullCheck(L_3);
 		Type_t * L_4;
-		L_4 = VirtFuncInvoker0< Type_t * >::Invoke(102 /* System.Type System.Type::GetEnumUnderlyingType() */, L_3);
+		L_4 = VirtFuncInvoker0< Type_t * >::Invoke(104 /* System.Type System.Type::GetEnumUnderlyingType() */, L_3);
+		return L_4;
+	}
+}
+// System.Array System.Enum::GetValues(System.Type)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeArray * Enum_GetValues_m8EEC6B32F297FDB2F7375DC8B197E0E1AB8643BD (Type_t * ___enumType0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Type_t * L_0 = ___enumType0;
+		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Type_op_Equality_mA438719A1FDF103C7BBBB08AEF564E7FAEEA0046(L_0, (Type_t *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		ArgumentNullException_tFB5C4621957BC53A7D1B4FDD5C38B4D6E15DB8FB * L_2 = (ArgumentNullException_tFB5C4621957BC53A7D1B4FDD5C38B4D6E15DB8FB *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_tFB5C4621957BC53A7D1B4FDD5C38B4D6E15DB8FB_il2cpp_TypeInfo_var)));
+		ArgumentNullException__ctor_m81AB157B93BFE2FBFDB08B88F84B444293042F97(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralAD0928C03BDC2C023E2CF3BC347393F87144F9F8)), /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Enum_GetValues_m8EEC6B32F297FDB2F7375DC8B197E0E1AB8643BD_RuntimeMethod_var)));
+	}
+
+IL_0014:
+	{
+		Type_t * L_3 = ___enumType0;
+		NullCheck(L_3);
+		RuntimeArray * L_4;
+		L_4 = VirtFuncInvoker0< RuntimeArray * >::Invoke(103 /* System.Array System.Type::GetEnumValues() */, L_3);
 		return L_4;
 	}
 }
@@ -17433,7 +17490,7 @@ IL_0014:
 		RuntimeObject * L_4 = ___value1;
 		NullCheck(L_3);
 		String_t* L_5;
-		L_5 = VirtFuncInvoker1< String_t*, RuntimeObject * >::Invoke(104 /* System.String System.Type::GetEnumName(System.Object) */, L_3, L_4);
+		L_5 = VirtFuncInvoker1< String_t*, RuntimeObject * >::Invoke(106 /* System.String System.Type::GetEnumName(System.Object) */, L_3, L_4);
 		return L_5;
 	}
 }
@@ -17719,7 +17776,7 @@ IL_0014:
 		RuntimeObject * L_4 = ___value1;
 		NullCheck(L_3);
 		bool L_5;
-		L_5 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(103 /* System.Boolean System.Type::IsEnumDefined(System.Object) */, L_3, L_4);
+		L_5 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(105 /* System.Boolean System.Type::IsEnumDefined(System.Object) */, L_3, L_4);
 		return L_5;
 	}
 }
@@ -18591,7 +18648,7 @@ IL_0014:
 		Type_t * L_3 = ___enumType0;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_3);
+		L_4 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_3);
 		if (L_4)
 		{
 			goto IL_0031;
@@ -18670,7 +18727,7 @@ IL_0014:
 		Type_t * L_3 = ___enumType0;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_3);
+		L_4 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_3);
 		if (L_4)
 		{
 			goto IL_0031;
@@ -18749,7 +18806,7 @@ IL_0014:
 		Type_t * L_3 = ___enumType0;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_3);
+		L_4 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_3);
 		if (L_4)
 		{
 			goto IL_0031;
@@ -18828,7 +18885,7 @@ IL_0014:
 		Type_t * L_3 = ___enumType0;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_3);
+		L_4 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_3);
 		if (L_4)
 		{
 			goto IL_0031;
@@ -18907,7 +18964,7 @@ IL_0014:
 		Type_t * L_3 = ___enumType0;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_3);
+		L_4 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_3);
 		if (L_4)
 		{
 			goto IL_0031;
@@ -18986,7 +19043,7 @@ IL_0014:
 		Type_t * L_3 = ___enumType0;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_3);
+		L_4 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_3);
 		if (L_4)
 		{
 			goto IL_0031;
@@ -19065,7 +19122,7 @@ IL_0014:
 		Type_t * L_3 = ___enumType0;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_3);
+		L_4 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_3);
 		if (L_4)
 		{
 			goto IL_0031;
@@ -19144,7 +19201,7 @@ IL_0014:
 		Type_t * L_3 = ___enumType0;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_3);
+		L_4 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_3);
 		if (L_4)
 		{
 			goto IL_0031;
@@ -19223,7 +19280,7 @@ IL_0014:
 		Type_t * L_3 = ___enumType0;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_3);
+		L_4 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_3);
 		if (L_4)
 		{
 			goto IL_0031;
@@ -19306,7 +19363,7 @@ IL_0014:
 		Type_t * L_3 = ___enumType0;
 		NullCheck(L_3);
 		bool L_4;
-		L_4 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_3);
+		L_4 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_3);
 		if (L_4)
 		{
 			goto IL_0031;
@@ -33608,7 +33665,7 @@ IL_002b:
 		Type_t * L_22 = V_2;
 		NullCheck(L_22);
 		bool L_23;
-		L_23 = VirtFuncInvoker0< bool >::Invoke(74 /* System.Boolean System.Type::get_IsGenericType() */, L_22);
+		L_23 = VirtFuncInvoker0< bool >::Invoke(75 /* System.Boolean System.Type::get_IsGenericType() */, L_22);
 		if (!L_23)
 		{
 			goto IL_004f;
@@ -33618,7 +33675,7 @@ IL_002b:
 		Type_t * L_24 = V_2;
 		NullCheck(L_24);
 		Type_t * L_25;
-		L_25 = VirtFuncInvoker0< Type_t * >::Invoke(99 /* System.Type System.Type::GetGenericTypeDefinition() */, L_24);
+		L_25 = VirtFuncInvoker0< Type_t * >::Invoke(100 /* System.Type System.Type::GetGenericTypeDefinition() */, L_24);
 		RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_26 = { reinterpret_cast<intptr_t> (Nullable_1_t4EDBE007AFFA0315135B9A508DACA62D3C201867_0_0_0_var) };
 		IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 		Type_t * L_27;
@@ -37733,7 +37790,7 @@ IL_00eb:
 				L_58 = VirtFuncInvoker0< Type_t * >::Invoke(19 /* System.Type System.Reflection.PropertyInfo::get_PropertyType() */, L_57);
 				NullCheck(L_58);
 				bool L_59;
-				L_59 = VirtFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_58);
+				L_59 = VirtFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsEnum() */, L_58);
 				if (!L_59)
 				{
 					goto IL_0140;
@@ -38536,7 +38593,7 @@ IL_01b2:
 			Type_t * L_80 = V_13;
 			NullCheck(L_80);
 			FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E* L_81;
-			L_81 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(43 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_80, ((int32_t)58));
+			L_81 = VirtFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(44 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_80, ((int32_t)58));
 			V_14 = L_81;
 			V_15 = 0;
 			goto IL_01d9;

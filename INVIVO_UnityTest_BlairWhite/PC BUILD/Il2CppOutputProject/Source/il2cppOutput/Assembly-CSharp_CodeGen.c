@@ -114,21 +114,29 @@ extern void DoorScript_Update_mDBE125F49FB3868D0595F7AB780BF8D67C880F19 (void);
 extern void DoorScript_DoorsClosed_mA18D8F24895BA7C38DB6A126AB8F05CA3D515889 (void);
 // 0x00000033 System.Void DoorScript::.ctor()
 extern void DoorScript__ctor_m958AED4CCCAB3F5CFBEF5327F170DF306692BBA8 (void);
-// 0x00000034 System.Void ActivateObject::Start()
+// 0x00000034 System.Void ElevShutoff::Start()
+extern void ElevShutoff_Start_m6D359BEFD6E36D572DC42BCE0AB69A9E71FAC9DC (void);
+// 0x00000035 System.Void ElevShutoff::Update()
+extern void ElevShutoff_Update_m9D57C431AA206023B014476349243860C7E20D64 (void);
+// 0x00000036 System.Void ElevShutoff::Shutoff()
+extern void ElevShutoff_Shutoff_m75804A6257C7C5AEEFA8185DF99CE67E6FC0D6DB (void);
+// 0x00000037 System.Void ElevShutoff::.ctor()
+extern void ElevShutoff__ctor_m073807760CC878F2A96240A04F7FD68D23950999 (void);
+// 0x00000038 System.Void ActivateObject::Start()
 extern void ActivateObject_Start_m225E713634760D33807BBBCBA88743CF5C47FD05 (void);
-// 0x00000035 System.Void ActivateObject::Update()
+// 0x00000039 System.Void ActivateObject::Update()
 extern void ActivateObject_Update_mC4FBD400E0047F40F715CD4E029F29FE171C4424 (void);
-// 0x00000036 System.Void ActivateObject::OnMouseUp()
+// 0x0000003A System.Void ActivateObject::OnMouseUp()
 extern void ActivateObject_OnMouseUp_mBC55826F1E19F78B585BBFE0D769DC29996E67B5 (void);
-// 0x00000037 System.Void ActivateObject::.ctor()
+// 0x0000003B System.Void ActivateObject::.ctor()
 extern void ActivateObject__ctor_m17E6E3AFA30335392F5F9C712FB62528EC3FDCBE (void);
-// 0x00000038 System.Void FollowMouse::Start()
+// 0x0000003C System.Void FollowMouse::Start()
 extern void FollowMouse_Start_m6B6068CBE18D660E5F07D48C75A459A21EA65023 (void);
-// 0x00000039 System.Void FollowMouse::Update()
+// 0x0000003D System.Void FollowMouse::Update()
 extern void FollowMouse_Update_mE46B5DF0B0A1AD16E45E1D58D76D86A6181E2833 (void);
-// 0x0000003A System.Void FollowMouse::.ctor()
+// 0x0000003E System.Void FollowMouse::.ctor()
 extern void FollowMouse__ctor_mE7167A6DD9E38C6C8368F278ED3C900CDB20178A (void);
-static Il2CppMethodPointer s_methodPointers[58] = 
+static Il2CppMethodPointer s_methodPointers[62] = 
 {
 	EnterFadePanel_Awake_mECB2DA7A0A9922BBE9948FE713F6EEBB87677474,
 	EnterFadePanel_Start_m4695940353107737D703BE52BF30D962DE212F60,
@@ -181,6 +189,10 @@ static Il2CppMethodPointer s_methodPointers[58] =
 	DoorScript_Update_mDBE125F49FB3868D0595F7AB780BF8D67C880F19,
 	DoorScript_DoorsClosed_mA18D8F24895BA7C38DB6A126AB8F05CA3D515889,
 	DoorScript__ctor_m958AED4CCCAB3F5CFBEF5327F170DF306692BBA8,
+	ElevShutoff_Start_m6D359BEFD6E36D572DC42BCE0AB69A9E71FAC9DC,
+	ElevShutoff_Update_m9D57C431AA206023B014476349243860C7E20D64,
+	ElevShutoff_Shutoff_m75804A6257C7C5AEEFA8185DF99CE67E6FC0D6DB,
+	ElevShutoff__ctor_m073807760CC878F2A96240A04F7FD68D23950999,
 	ActivateObject_Start_m225E713634760D33807BBBCBA88743CF5C47FD05,
 	ActivateObject_Update_mC4FBD400E0047F40F715CD4E029F29FE171C4424,
 	ActivateObject_OnMouseUp_mBC55826F1E19F78B585BBFE0D769DC29996E67B5,
@@ -189,73 +201,77 @@ static Il2CppMethodPointer s_methodPointers[58] =
 	FollowMouse_Update_mE46B5DF0B0A1AD16E45E1D58D76D86A6181E2833,
 	FollowMouse__ctor_mE7167A6DD9E38C6C8368F278ED3C900CDB20178A,
 };
-static const int32_t s_InvokerIndices[58] = 
+static const int32_t s_InvokerIndices[62] = 
 {
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	2790,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
-	1817,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	3014,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
+	1978,
 };
 extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	58,
+	62,
 	s_methodPointers,
 	0,
 	NULL,

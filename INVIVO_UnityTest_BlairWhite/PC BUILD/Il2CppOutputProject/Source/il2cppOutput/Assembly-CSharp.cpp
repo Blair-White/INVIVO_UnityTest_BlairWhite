@@ -114,6 +114,8 @@ struct CreditsController_tA7A8C05B4046A2AB10EF0A0C2D7CF0B4AD1A8A47;
 struct DisableChildren_t0BB60754279EF99D12B772E369C89C8BD3B9A273;
 // DoorScript
 struct DoorScript_t9BB367162A3D3D367DE48E71947403F7992CA3A1;
+// ElevShutoff
+struct ElevShutoff_tC974AF55A18A4D6278679A39878B6C712FF53660;
 // EnterFadePanel
 struct EnterFadePanel_t6C714305897F2B151E0D7954DD2F1663C099D5DA;
 // FollowMouse
@@ -4156,6 +4158,25 @@ public:
 	{
 		___UI_4 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___UI_4), (void*)value);
+	}
+};
+
+
+// ElevShutoff
+struct ElevShutoff_tC974AF55A18A4D6278679A39878B6C712FF53660  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+	// UnityEngine.GameObject[] ElevShutoff::Deactivate
+	GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* ___Deactivate_4;
+
+public:
+	inline static int32_t get_offset_of_Deactivate_4() { return static_cast<int32_t>(offsetof(ElevShutoff_tC974AF55A18A4D6278679A39878B6C712FF53660, ___Deactivate_4)); }
+	inline GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* get_Deactivate_4() const { return ___Deactivate_4; }
+	inline GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642** get_address_of_Deactivate_4() { return &___Deactivate_4; }
+	inline void set_Deactivate_4(GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* value)
+	{
+		___Deactivate_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Deactivate_4), (void*)value);
 	}
 };
 
@@ -9142,6 +9163,79 @@ IL_001e:
 }
 // System.Void DoorScript::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DoorScript__ctor_m958AED4CCCAB3F5CFBEF5327F170DF306692BBA8 (DoorScript_t9BB367162A3D3D367DE48E71947403F7992CA3A1 * __this, const RuntimeMethod* method)
+{
+	{
+		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void ElevShutoff::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevShutoff_Start_m6D359BEFD6E36D572DC42BCE0AB69A9E71FAC9DC (ElevShutoff_tC974AF55A18A4D6278679A39878B6C712FF53660 * __this, const RuntimeMethod* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void ElevShutoff::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevShutoff_Update_m9D57C431AA206023B014476349243860C7E20D64 (ElevShutoff_tC974AF55A18A4D6278679A39878B6C712FF53660 * __this, const RuntimeMethod* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void ElevShutoff::Shutoff()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevShutoff_Shutoff_m75804A6257C7C5AEEFA8185DF99CE67E6FC0D6DB (ElevShutoff_tC974AF55A18A4D6278679A39878B6C712FF53660 * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	{
+		// for (int i = 0; i < Deactivate.Length; i++)
+		V_0 = 0;
+		goto IL_0016;
+	}
+
+IL_0004:
+	{
+		// Deactivate[i].SetActive(false);
+		GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* L_0 = __this->get_Deactivate_4();
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		NullCheck(L_3);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_3, (bool)0, /*hidden argument*/NULL);
+		// for (int i = 0; i < Deactivate.Length; i++)
+		int32_t L_4 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_4, (int32_t)1));
+	}
+
+IL_0016:
+	{
+		// for (int i = 0; i < Deactivate.Length; i++)
+		int32_t L_5 = V_0;
+		GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642* L_6 = __this->get_Deactivate_4();
+		NullCheck(L_6);
+		if ((((int32_t)L_5) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_6)->max_length))))))
+		{
+			goto IL_0004;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void ElevShutoff::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ElevShutoff__ctor_m073807760CC878F2A96240A04F7FD68D23950999 (ElevShutoff_tC974AF55A18A4D6278679A39878B6C712FF53660 * __this, const RuntimeMethod* method)
 {
 	{
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
